@@ -1,0 +1,117 @@
+@import 'variables';
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+    height: 100vh;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: MuseoSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-variant-ligatures: none
+}
+
+a {
+  color: inherit;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productsCook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #f2f2f2;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  gap: 30px;
+  padding: 16px 50px 50px 50px;
+}
+
+.cookName {
+  //width: 150rem;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0px 0;
+  padding: 10px 0 10px 0;
+  background-color: #8380801f;
+}
+
+.cookName h2 {
+  text-transform: uppercase;
+  font-family: DINPRO;
+  font-size: 2rem;
+  font-weight: 700;
+
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+
+  @include mobile {
+    top: -70px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 850px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.not-visible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.not-draggable {
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Standard syntax */
+  user-drag: none;
+  -webkit-user-drag: none;
+}

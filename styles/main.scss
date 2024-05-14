@@ -1,0 +1,59 @@
+@import 'variables', 'mixins', 'nav', 'fonts', 'resets', 'socialcontainer', 'banner', 'swiper', 'linecontainer', 'discoverbanner', 'productcard', 'footer', 'constrictor', 'page_categorias', 'page_lineas', 'youtubeindex', 'categorybanner', 'product', 'notfound', 'page_buscar', 'keyframes', 'threesixty', 'storebutton', 'page_productos', 'spinner', 'productmorephotos', 'productbanners', 'productfeatures', 'productspecstable', 'youtubebanner', 'productvideos', 'categorylineswiper', 'mainbanner', 'categoryswiper', 'support', 'tyc', 'category_mainbanner', 'discontinuous', 'about-us', 'page_support';
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+@import 'swiper/scss/lazy';
+
+section {
+  border-bottom: $divider;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include hoverScale;
+
+  &:hover {
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, .1));
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* width of the entire scrollbar */
+}
+
+.product-banner.yellow-bg {
+  background-color: yellow;
+}
+
+/* ******************** */
+form.abcde {
+  padding: 50px;
+  @include flex(column);
+
+  &>* {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 5px 10px;
+  }
+}
+
+/* LineProductCard.module.css */
+.verMasButton {
+  transition: all .1s ease-out;
+  margin: 10px;
+  font-size: 16px;
+  font-family: MuseoSans;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+  color: #fff;
+  background: linear-gradient(60deg, #920711, #e02327);
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 8px 25px;
+}
